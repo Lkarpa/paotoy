@@ -20,17 +20,16 @@ players = {"Ataman": ("https://images.eurohoops.net/2024/02/015542a7-ataman-pao.
            "Yurtseven" : ("https://upload.wikimedia.org/wikipedia/commons"
                  "/thumb/0/01/%C3%96mer_Yurtseven_77_Panathinaikos_BC_20241025_%281%29.jpg"
                  "/220px-%C3%96mer_Yurtseven_77_Panathinaikos_BC_20241025_%281%29.jpg"),
-           "KP": ("https://www.pickngreen.gr/wp-content/uploads/"
+           "Kalaintzakis": ("https://www.pickngreen.gr/wp-content/uploads/"
           "2024/01/panagiotis-kalaitzakis-official-photo-e1706263509573.jpg")}
 
 st.balloons()
 
 mvp = st.radio('', ['Ataman' ,'Juancho', 'Grant', 'Nunn', 'Sloukas',
-                       'Lorenzo Brown', 'Osman', 'Yurtseven', 'KP'], index=0)
+                       'Lorenzo Brown', 'Osman', 'Yurtseven', 'Kalaintzakis'], index=0)
 
 if mvp == "Juancho":
-    st.write("You selected mine :-) ")
+    st.write("You selected mine \U0001f600")
     st.image(players[mvp])
 else:
     st.image(players[mvp])
-    st.write(mvp)
