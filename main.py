@@ -17,16 +17,17 @@ players = {"Ataman": ("https://images.eurohoops.net/2024/02/015542a7-ataman-pao.
            "Osman" : ("https://upload.wikimedia.org/wikipedia/commons"
              "/thumb/9/92/Cedi_Osman_16_Panathinaikos_BC_20241025_%281%29_%28cropped%29"
              ".jpg/220px-Cedi_Osman_16_Panathinaikos_BC_20241025_%281%29_%28cropped%29.jpg"),
-           "Yurtseven" : ("https://upload.wikimedia.org/wikipedia/commons"
-                 "/thumb/0/01/%C3%96mer_Yurtseven_77_Panathinaikos_BC_20241025_%281%29.jpg"
-                 "/220px-%C3%96mer_Yurtseven_77_Panathinaikos_BC_20241025_%281%29.jpg"),
+           "Gabriel" : ("https://paopantou.gr/wp-content/uploads/2024/12/"
+                        "Opera-%CE%A3%CF%84%CE%B9"
+                        "%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF"
+                        "%85%CF%80%CE%BF_2024-12-23_193416_www.instagram.com-1.jpg"),
            "Kalaintzakis": ("https://www.pickngreen.gr/wp-content/uploads/"
           "2024/01/panagiotis-kalaitzakis-official-photo-e1706263509573.jpg")}
 
 st.balloons()
 
 mvp = st.radio('', ['Ataman' ,'Juancho', 'Grant', 'Nunn', 'Sloukas',
-                       'Lorenzo Brown', 'Osman', 'Yurtseven', 'Kalaintzakis'], index=0)
+                       'Lorenzo Brown', 'Osman', 'Gabriel', 'Kalaintzakis'], index=0)
 
 if mvp == "Juancho":
     st.write("You selected mine \U0001f600")
