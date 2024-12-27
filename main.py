@@ -32,5 +32,5 @@ if mvp == "Juancho":
     st.write("You selected mine :-) ")
     st.image(players[mvp])
 else:
-    st.write(mvp)
     st.image(players[mvp])
+    st.write(mvp)
