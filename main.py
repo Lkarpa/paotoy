@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import requests
-from bs4 import BeautifulSoup
 
 st.header(" Who is going to be your tonight MVP?")
 
@@ -25,16 +23,10 @@ players = {"Ataman": ("https://images.eurohoops.net/2024/02/015542a7-ataman-pao.
            "KP": ("https://www.pickngreen.gr/wp-content/uploads/"
           "2024/01/panagiotis-kalaitzakis-official-photo-e1706263509573.jpg")}
 
-url = ("https://www.euroleaguebasketball.net/en/euroleague/teams/panathinaikos"
-             "-aktor-athens/statistics/pan/?season=2024-25&phase=All%20phases")
-
-
 st.balloons()
-
 
 mvp = st.radio('', ['Ataman' ,'Juancho', 'Grant', 'Nunn', 'Sloukas',
                        'Lorenzo Brown', 'Osman', 'Yurtseven', 'KP'], index=0)
-
 
 if mvp == "Juancho":
     st.write("You selected mine :-) ")
@@ -42,4 +34,3 @@ if mvp == "Juancho":
 else:
     st.write(mvp)
     st.image(players[mvp])
-
